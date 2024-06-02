@@ -1,0 +1,146 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+#add-to-cart {
+    background-color: #1b7440;
+    padding: 20px;
+    width: clamp(110px, 280px, 300px);
+    color: white;
+    border-radius: 4px;
+    border: 0px;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#beige-box {
+    background-color: #f7eee6;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    width: device-width;
+    height: device-height;
+}
+
+#white-box {
+    background-color: white;
+    padding: 25px;
+    max-height: 400px;
+}
+
+#desktop-img {
+    max-height: 450px;
+    width: auto;
+}
+
+#mobile-img {
+    display: none;
+}
+
+#product-card {
+    border-radius: 40px;
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    border: #f7eee6;
+}
+
+#price {
+    color: #155c33;
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#description {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.fraunces {
+    font-family: "Fraunces", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#title {
+    font-weight: bolder;
+    font-size: clamp(20px, 35px, 35px);
+    padding: 0;
+    width: 250px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#original-price {
+    color: gray;
+    text-decoration: line-through;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+#prices {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#perfume {
+    font-family: "Montserrat", sans-serif;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 650px) {
+    #desktop-img {
+        display: none;
+    }
+    #mobile-img {
+        display: flex;
+        width: 280px;
+        height: auto;
+    }
+    #white-box {
+        width: 230px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #product-card {
+        width: 280px;
+    }
+    #product-card-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #add-to-cart {
+        width: clamp(110px, 240px, 240px);
+    }
+}
+
+@media (max-height: 600px) {
+    #beige-box {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
